@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Network_Throughput:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Network_Throughput_jar</output-path>
+    <root id="archive" name="Network_Throughput.jar">
+      <element id="module-output" name="Network_Throughput" />
+    </root>
+  </artifact>
+</component>
