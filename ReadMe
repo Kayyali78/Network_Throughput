@@ -1,0 +1,20 @@
+Measure the latency and throughput of TCP and/or UDP (as noted below) across at least three pairs of machines using at
+least two different networks. For example, two CS servers (like rho and pi), or a CS server to a laptop, wired or
+wireless, or off-campus. Create a web page with graphs summarizing your results. All messages must use xor encoding of
+64-bit (8 byte, java "long") values, based on a (possibly random) key, and validated by the receiver.
+
+Include the following measurements:
+
+    - Measure round-trip latency (RTTs) and how it varies with message size in TCP, by sending and receiving
+        (echoing and validating) messages of size 8, 32, 512, and 1024 bytes.
+    - The same as (1), except using UDP.
+    - Measure throughput (bits per second) and how it varies with message size in TCP, by sending 1-MByte of data
+        (with a 8-byte acknowledgment in the reverse direction) using different numbers of messages: 1024 1024-Byte messages,
+        vs 2048 512-Byte messages, vs 8192 X 128-Byte messages.
+    - The same as (3), using UDP.
+
+For timing, use System.nanoTime (or the closest equivalent if using other languages).
+
+
+For graphical results, go to https://cs.oswego.edu/~sweeks/main.html
+
